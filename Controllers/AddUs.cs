@@ -15,7 +15,7 @@ namespace SylviaCTwoToFour.Controllers;
         _addUsService = addUsService;
     }
 
-    [HttpPost]
+    [HttpGet]
     [Route("Add")]
         public string addMe(int x, int y)
         {

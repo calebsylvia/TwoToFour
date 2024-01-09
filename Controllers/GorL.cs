@@ -15,7 +15,7 @@ namespace SylviaCTwoToFour.Controllers;
         _gorLService = gorLService;
     }
 
-        [HttpPost]
+        [HttpGet]
         [Route("GorL")]
 
         public string compare(int x, int y)
@@ -24,3 +24,5 @@ namespace SylviaCTwoToFour.Controllers;
         }
 
     }
+
+    //http://localhost:5278/GorL/GorL?x=0&y=0

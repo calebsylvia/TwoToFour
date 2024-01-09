@@ -15,8 +15,8 @@ namespace SylviaCTwoToFour.Controllers;
         _wakeUpService = wakeUpService;
     }
 
-        [HttpPost]
-        [Route("WakeUp/What_is_your_name?{name}/What_time_did_you_wake_up?{time}")]
+        [HttpGet]
+        [Route("WakeUp/{name}/{time}")]
         public string wakeUp(string name, string time)
         {
             return _wakeUpService.wakeUp(name, time);
@@ -24,3 +24,5 @@ namespace SylviaCTwoToFour.Controllers;
 
 
     }
+
+//http://localhost:5278/WakeUp/WakeUp/Caleb/9%3A00PM
