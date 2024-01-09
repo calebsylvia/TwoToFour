@@ -17,7 +17,7 @@ namespace SylviaCTwoToFour.Controllers;
 
         [HttpGet]
         [Route("WakeUp/{name}/{time}")]
-        public string wakeUp(string name, int time)
+        public string wakeUp(string name, string time)
         {
             return _wakeUpService.wakeUp(name, time);
         }
