@@ -2,7 +2,7 @@ namespace SylviaCTwoToFour.Services;
 
 public class WakeUpService : IWakeUpService
 {
-    public string wakeUp(string name, string time)
+    public string wakeUp(string name, int time)
     {
         return $"Nice to meet you {name}! You woke up at {time}!";
     }
